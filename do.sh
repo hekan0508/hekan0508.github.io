@@ -4,4 +4,4 @@ git config --global push.default simple
 git add .
 git commit -m $/
 git push
-strat http://hekan0508.github.io
+start http://hekan0508.github.io
