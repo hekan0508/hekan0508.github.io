@@ -8,12 +8,80 @@
     <link rel="stylesheet" href="">
 </head>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>贺看的个人主页</title>
+    <style>
+    body {
+        font: 600 14px/24px Arial;
+        margin: 12px;
+    }
+    
+    .card-container {
+        cursor: pointer;
+        height: 250px;
+        perspective: 200;
+        position: relative;
+        width: 400px;
+    }
+    
+    .card {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+    
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .side {
+        backface-visibility: hidden;
+        border-radius: 6px;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .back {
+        background: #eaeaed;
+        color: #0087cc;
+        line-height: 200enter;
+        transform: rotateY(180deg);
+    }
+    </style>
+</head>
+
+<body>
+    <h1>贺看的个人主页</h1>
+    <div class="card-container">
+        <div class="card">
+            <div class="side"><img src="http://ww1.sinaimg.cn/bmiddle/82be6f9ejw1emjkappxfvj20gi0b0n20.jpg" alt="詹姆斯"></div>
+            <div class="side back">----勒布朗·詹姆斯（1984年12月30日—），美国职业篮球运动员，场上司职小前锋，现效力于克利夫兰骑士队。詹姆斯在2003年的NBA选秀大会中，首轮第一顺位被克利夫兰骑士队选中。2003-2010年，詹姆斯在骑士队效力7年，期间获得两届NBA最有价值球员（MVP）。2010年转会至迈阿密热火队，与德怀恩·韦德、克里斯·波什组成“三巨头”阵容。 
+
+2012年，詹姆斯收获了个人在NBA的第三座最有价值球员奖，亦于同年获得了NBA生涯第一个总冠军并加冕总决赛MVP。
+
+2014-15赛季，詹姆斯回归克利夫兰骑士队。2015年7月，斩获最佳冠军表现奖。</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
 <body>
     <h1>平时作业</h1>
     <p><a href="6/index.html">第六周作业</a></p>
     <p><a href="7/index.html">第七周作业</a></p>
     <p><a href="8/index.html">第八周作业</a></p>
     <p><a href="9/index.html">第九周作业</a></p>
+    <p><a href="10/index.html">第十周作业</a></p>
     <p><a href="12/index.html">第十二周作业</a></p>
     <p><a href="13/index.html">第十三周作业</a></p>
     <p><a href="14/index.html">第十四周作业</a></p>
