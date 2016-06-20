@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>浮动与浮动清除</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+<h1>浮动：</h1>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>浮动</title>
+        <style>
+        #head {
+            border: 1px #CCC solid;
+            width: %90px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: rgba(200, 0, 0, 0.5);
+        }
+        
+        #main {
+            border: 1px #CCC solid;
+            width: %90px;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        
+        #left {
+            border: 1px #CCC solid;
+            width: 198px;
+            height: 98px;
+            float: left;
+            background-color: rgba(0, 200, 0, 0.5);
+        }
+        
+        #right {
+            border: 1px #CCC solid;
+            width: 193px;
+            height: 98px;
+            margin-left: 5px;
+            float: right;
+            background-color: rgba(0, 200, 0, 0.5)
+        }
+        
+        #middle {
+            border: 1px #CCC solid;
+            width: 193px;
+            height: 98px;
+            margin-left: 5px;
+            float: left;
+            background-color: rgba(0, 0, 200, 0.5)
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="head">头部</div>
+        <div id="main">
+            <div id="left">左侧</div>
+            <div id="middle">中间</div>
+            <div id="middle">中间</div>
+            <div id="middle">中间</div>
+            <div id="middle">中间</div>
+            <div id="middle">中间</div>
+            <div id="middle">中间</div>
+            <div id="right">右侧</div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+
+
+
+
+------------------------------------------------------------
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>浮动清除实例</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+<h1>浮动清除：</h1>
+    <!DOCTYPE html>
+    <html lang="zh">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>浮动清除实例</title>
+        <style>
+        body {
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .item {
+            /* height: 115px; */
+            width: 500px;
+            border: 1px #ccc solid;
+            padding: 10px;
+            margin: 20px;
+        }
+        
+        .float_area {
+            border: 1px #ccc solid;
+            width: 100px;
+            float: left;
+            margin: 0 10px 10px 0;
+            background-color: rgba(0, 200, 0, 0.5);
+        }
+        
+        .normal_area {
+            border: 1px #ccc solid;
+            width: 210px;
+            background-color: rgba(200, 0, 0, 0.5);
+            height: 150px;
+            line-height: 150px;
+            clear: both;
+        }
+        
+        .float_area {
+            height: 50px;
+            line-height: 50px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="item">
+            <div class="float_area">左浮动模块</div>
+            <div class="float_area">左浮动模块</div>
+            <div class="normal_area">希望按正常流显示的模块</div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+
+------------------------------------------------------------
+
+
+

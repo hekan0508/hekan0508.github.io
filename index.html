@@ -1,93 +1,154 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>网页制作与编辑</title>
-    <link rel="stylesheet" href="">
-</head>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <style type="text/css">
+        body {
+            font: 600 14px/24px Arial;
+            margin: 12px;
+            background: #00BCF2;
+        }
+        .box{
+            width: 1024px;
+            height: auto;
+            background: #6e76c7;
+            margin: 0 auto;
+            border:  1px solid red ;
+        }
+        .header{
+            border:  1px solid red ;
+            margin-top: 0px;
+            width: 1022px;
+            height: 150px;
+            background: url("images/navbg.jpg");
+        }
+        #content{
+            margin-left: 650px;
+            margin-top: 40px;
+            color: #0e1099;
+            font: 600 70px 楷体;
+        }
+        .content1{
+            margin-top:400px;
+            float: left;
+            width: 1022px;
+            height: auto;
+            position: relative;
+        }
+        .nav{
+            border-radius: 6px;
+            border: 1px solid red;
+            background: #d4fff8;
+            width: 200px;
+            height: 500px;/* 添加作业或者考试，在此调节长度*/
+            position: absolute;
+            left: 0px;
+            top: -395px; 
+            bottom: 0px;
+        }
+        .nav h2{
+            font: 600 25px 楷体;
+        }
+        .left{
+            border-radius: 6px;
+            width: 816px;
+            height: 390px;
+            position: absolute;
+            border: 2px solid red ;
+            left: 205px;
+            bottom: 0px;
+        }
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>贺看的个人主页</title>
-    <style>
-    body {
-        font: 600 14px/24px Arial;
-        margin: 12px;
-    }
-    
-    .card-container {
-        cursor: pointer;
-        height: 250px;
-        perspective: 200;
-        position: relative;
-        width: 400px;
-    }
-    
-    .card {
-        height: 100%;
-        position: absolute;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease-in-out;
-        width: 100%;
-    }
-    
-    .card:hover {
-        transform: rotateY(180deg);
-    }
-    
-    .side {
-        backface-visibility: hidden;
-        border-radius: 6px;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-    }
-    
-    .back {
-        background: #eaeaed;
-        color: #0087cc;
-        line-height: 200enter;
-        transform: rotateY(180deg);
-    }
+        .card {
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .side {
+            backface-visibility: hidden;
+            border-radius: 6px;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .back {
+            background: #eaeaed;
+            color: #0087cc;
+            transform: rotateY(180deg);
+        }
+
+        #bottom ul{
+                list-style: none;
+                float: left;
+        }
+        #bottom ul li{
+                text-decoration: none;
+                float: left;
+        }
+        #bottom ul li a{
+             text-decoration: none;
+        }
+
     </style>
+
 </head>
-
 <body>
-    <h1>贺看的个人主页</h1>
-    <div class="card-container">
-        <div class="card">
-            <div class="side"><img src="http://ww1.sinaimg.cn/bmiddle/82be6f9ejw1emjkappxfvj20gi0b0n20.jpg" alt="詹姆斯"></div>
-            <div class="side back">----勒布朗·詹姆斯（1984年12月30日—），美国职业篮球运动员，场上司职小前锋，现效力于克利夫兰骑士队。詹姆斯在2003年的NBA选秀大会中，首轮第一顺位被克利夫兰骑士队选中。2003-2010年，詹姆斯在骑士队效力7年，期间获得两届NBA最有价值球员（MVP）。2010年转会至迈阿密热火队，与德怀恩·韦德、克里斯·波什组成“三巨头”阵容。 
+    <div class="box">
+        <div class="header">
+            <h1 id="content">我的主页</h1>
+        </div>
+        <div class="content1">
+            <div class="nav">
+                <h2>平时作业</h2>
+                <ul>
+                        <li><a href="6/index.html"> 第六周作业</a></li>
+                        <li><a  href="7/index.html">第七周作业</a></li>
+                        <li><a  href="8/index.html">第八周作业</a></li>
+                        <li><a  href="9/index.html">第九周作业</a></li>
+                        <li><a  href="10/index.html">第十周作业</a></li>
+                        <li><a  href="12/index.html">第十二周作业</a></li>
+                        <li><a  href="13/index.html">第十三周作业</a></li>
+                        <li><a  href="14/index.html">第十四周作业</a></li>
+                 </ul>
+                <h2>考试</h2>
+                <ul>
+                       <li><a href="期中考试/index.html">期中考试</a></li>
+                  <!--  <li><a>请问人情味</a></li>
+                   <li><a> 切尔奇</a></li> -->
+                </ul>
+            </div>
+            <div class="left">
+                <div class="card">
+                    <div class="side"><img src="images/leftbg.jpg" alt="詹姆斯"></div>
+                    <div class="side back">----勒布朗·詹姆斯（1984年12月30日—），美国职业篮球运动员，场上司职小前锋，现效力于克利夫兰骑士队。詹姆斯在2003年的NBA选秀大会中，首轮第一顺位被克利夫兰骑士队选中。2003-2010年，詹姆斯在骑士队效力7年，期间获得两届NBA最有价值球员（MVP）。2010年转会至迈阿密热火队，与德怀恩·韦德、克里斯·波什组成“三巨头”阵容。 
 
-2012年，詹姆斯收获了个人在NBA的第三座最有价值球员奖，亦于同年获得了NBA生涯第一个总冠军并加冕总决赛MVP。
+              2012年，詹姆斯收获了个人在NBA的第三座最有价值球员奖，亦于同年获得了NBA生涯第一个总冠军并加冕总决赛MVP。当年夏天，詹姆斯代表美国男篮获得了伦敦奥运会金牌，追平了迈克尔·乔丹在1992年所创的纪录。2013年，他再度获得NBA总冠军、完成两连冠，并连续两年包揽常规赛和总决赛MVP。
 
-2014-15赛季，詹姆斯回归克利夫兰骑士队。2015年7月，斩获最佳冠军表现奖。</div>
+               2014-15赛季，詹姆斯回归克利夫兰骑士队。2015年7月，斩获最佳冠军表现奖。
+
+
+
+2016年6月20日，詹姆斯带领骑士队总比分4-3逆转勇士队获得队史第一座NBA总冠军，詹姆斯获得总决赛MVP奖。</div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom" style="border: 1px solid red ;width: 500; height: auto;margin-left: 200px;">
+            <ul>
+                <li><a href=""><h1 style="font">afsbdfabdf</h1</a></li>
+                <li><a href="链接地址"><img src="图标">afafsdf</a></li>
+                <li><a href="链接地址"><img src="图标">afafsdf</a></li>
+            </ul>   
         </div>
     </div>
 </body>
-
-</html>
-
-
-
-
-<body>
-    <h1>平时作业</h1>
-    <p><a href="6/index.html">第六周作业</a></p>
-    <p><a href="7/index.html">第七周作业</a></p>
-    <p><a href="8/index.html">第八周作业</a></p>
-    <p><a href="9/index.html">第九周作业</a></p>
-    <p><a href="10/index.html">第十周作业</a></p>
-    <p><a href="12/index.html">第十二周作业</a></p>
-    <p><a href="13/index.html">第十三周作业</a></p>
-    <p><a href="14/index.html">第十四周作业</a></p>
-</body>
-<h1>考试</h1>
-<p><a href="期中考试/index.html">期中考试</a></p>
-</body>
-
 </html>
